@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+            <body>
+                
+                <form action="scripts/data.php" method="post" enctype="multipart/form-data">
+<label>Name:</label>
+                    <input type="text" name="student_name" id="student_name" >
+                    <br>
+                    <label for="email_address">Email:</label>
+                    <input type="email" name="email_address" id="email_addresss" >
+                <br>
+                    <textarea name="Address" id="Address"rows="5"cols="35">
+                    Please Enter your Address here
+                </textarea>
+                <br>
+                <label for="phoneNumber">Phone Number:</label>
+                <input type="tel" id="phoneNumber" name="phoneNumber" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                <br>
+                <fieldset>
+                    <legend>Gender</legend>
+                <input type="radio" name="gender" id="male" value="male">
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="female" value="female">
+                <label for="female">Female</label>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Favourite subject</legend>
+                <input type="checkbox" name="subjects" id="subjects" value="math">
+                <label for="subject">Math</label>
+                <br>
+                <input type="checkbox" name="subjects" id="subjects" value="english">
+                <label for="subject">english</label>
+            <br>
+            <input type="checkbox" name="subjects" id="subjects" value="science">
+            <label for="subject">science</label>
+</fieldset>
+<br>
+<br>
+
+<label for="classes"> Select Course:</label>
+<br>
+<select name="classes" id="classes">
+    <option value="">--Select--</option>
+    <option value="Software Engineering">Software Engineering</option>
+    <option value="Dart">Dart</option>
+</select>
+
+<br>
+<br>
+
+
+<input type="reset" id="clear" name="clear" value="Cancel">
+<input type="submit" id="submit" name="submit" value="Register">
+<hr>
+
+            </form>
+            </body>
+        </title>
+    </head>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+            <body>
+                
+                <form action="scripts/data.php" method="post" enctype="multipart/form-data">
+<label>Name:</label>
+                    <input type="text" name="student_name" id="student_name" >
+                    <br>
+                    <label for="email_address">Email:</label>
+                    <input type="email" name="email_address" id="email_addresss" >
+                <br>
+                    <textarea name="bio" id="bio"rows="5"cols="35">
+                    Please Enter your text here
+                </textarea>
+                <br>
+                <fieldset>
+                    <legend>Favourite subject</legend>
+                <input type="checkbox" name="subjects" id="subjects" value="math">
+                <label for="subject">Math</label>
+                <br>
+                <input type="checkbox" name="subjects" id="subjects" value="english">
+                <label for="subject">english</label>
+            <br>
+            <input type="checkbox" name="subjects" id="subjects" value="science">
+            <label for="subject">science</label>
+</fieldset>
+<fieldset>
+    <legend>Gender</legend>
+<input type="radio" name="gender" id="male" value="male">
+<label for="male">Male</label>
+<input type="radio" name="gender" id="female" value="female">
+<label for="female">Female</label>
+</fieldset>
+<select name="classes" id="classes" >
+    <label>Classes</label>
+    <option value="">--Select--</option>
+
+    <option value="Software Engineerinig">Software Engineerinig</option>
+    <option value="Dart">Dart</option>
+<br>
+<br>
+</select>
+<label>Pasport Photo</label>
+    <input type="file" id="passport_photo" name="passport_photo" accept="image/*">
+<input type="button" id="btn_ok" name="btn_ok" value="Upload">
+<input type="reset" id="clear" name="clear" value="Clear">
+<input type="submit" id="submit" name="submit" value="Register">
+<hr>
+
+            </form>
+            </body>
+        </title>
+    </head>
+</html>
